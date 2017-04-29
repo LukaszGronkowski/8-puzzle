@@ -134,6 +134,7 @@ public class AStar {
 	}
 
 	void display(String checkedState) {
+		System.out.println("Final state: " + checkedState);
 		System.out.println("Moves done:" + costMap.get(checkedState));
 		System.out.println("Nodes visited: " + checkedNodes);
 		System.out.println("Nodes checked: " + generatedNodes);
