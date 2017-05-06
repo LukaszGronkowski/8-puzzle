@@ -11,10 +11,7 @@ public class Manhattan implements Heuristics {
 			// and in the goalState
 			h += countMovements(actualState.indexOf(Integer.toString(i)),
 					"123804765".indexOf(Integer.toString(i)));
-		}
-		// if 0 is not in the middle we add 1
-		if (actualState.indexOf("0") != 4) h++;
-		
+		}		
 		return h;
 	}
 	

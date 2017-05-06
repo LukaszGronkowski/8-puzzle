@@ -22,7 +22,13 @@ public class AStar {
 			heuristicFunction = new Manhattan();
 			break;
 		case 2:
-			heuristicFunction = new Nielsen();
+			heuristicFunction = new Nillson();
+			break;
+		case 3:
+			heuristicFunction = new LinearConflict();
+			break;
+		case 4:
+			heuristicFunction = new MisplacedTiles();
 			break;
 		default:
 			break;
@@ -31,9 +37,7 @@ public class AStar {
 	
 	// (1) adding the actual node to the queue (with expected cost)
 	void addToQueue(String actualState, String previousState) {
-		pathCost = calculatePathCost(previousState); // g(n) - cost to get to
-														// this node from start
-														// state
+		pathCost = calculatePathCost(previousState); // g(n) - cost to get to this node from start state
 		int expectedCost = heuristicFunction.calculateValue(actualState) + 
 				pathCost; // expected cost to get to the goal state
 

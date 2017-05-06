@@ -14,7 +14,7 @@ public class MainClass {
 		System.out.println("Goal state: 123804765");
 		
 		System.out.println("Choose one of the heuristics: ");
-		System.out.println(" 1. Manhattan Distance --- 2. Nielsen");
+		System.out.println(" 1. Manhattan Distance --- 2. Nielsen --- 3. Linear Conflict --- 4. Misplaced Tiles");
 		int choice = Integer.parseInt(userInput.readLine());
 		AStar execute = new AStar(choice);
 
