@@ -15,6 +15,7 @@ public class MainClass {
 		
 		System.out.println("Choose one of the heuristics: ");
 		System.out.println(" 1. Manhattan Distance --- 2. Nielsen --- 3. Linear Conflict --- 4. Misplaced Tiles");
+		System.out.println(" 5. N-MaxSwap --- 6. Out of Row and Column");
 		int choice = Integer.parseInt(userInput.readLine());
 		AStar execute = new AStar(choice);
 

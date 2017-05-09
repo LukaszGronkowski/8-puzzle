@@ -30,6 +30,12 @@ public class AStar {
 		case 4:
 			heuristicFunction = new MisplacedTiles();
 			break;
+		case 5:
+			heuristicFunction = new NMaxSwap();
+			break;
+		case 6:
+			heuristicFunction = new OutOfRowColumn();
+			break;
 		default:
 			break;
 		}
